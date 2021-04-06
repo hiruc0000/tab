@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab01 CSS</title>
+    <link rel="stylesheet" href="./tab01.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="tabs">
+            <input id="tab01" type="radio" name="tabs" checked>
+            <label for="tab01">HTML</label>
+            <input id="tab02" type="radio" name="tabs">
+            <label for="tab02">CSS</label>
+            <input id="tab03" type="radio" name="tabs">
+            <label for="tab03">JavaScript</label>
+
+            <div class="tab-container">
+                <div class="tab-content">
+                    <h2>HTML</h2>
+                    <p>HTML/CSSだけでtabUIの実装。タブのラベルとradioボタンを関連付け、radioボタンは<code>display:none</code>で非表示に。<br>
+                        またtabを選択した際表示される領域は<code>position:absolute</code>で全て重ね初期状態では<code>opacity:0</code>にしチェックされたradioボタンに対するコンテンツのみを透明化を解除し表示されるようにする。</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla tortor, a posuere urna. Praesent urna quam, semper ut ultricies et, mollis ac elit. Suspendisse tempor, lacus id consectetur sagittis, lorem odio.</p>
+                </div>
+
+                <div class="tab-content">
+                    <h2>CSS</h2>
+                    <p>選択したtabのコンテンツ表示される際のアニメーションは、tab-content内の見出し<code>h2</code>と<code>p</code>を右にずらし透明にし表示される時に元に戻し<code>transition</code>で指定する。</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla tortor, a posuere urna. Praesent urna quam, semper ut ultricies et, mollis ac elit. Suspendisse tempor, lacus id consectetur sagittis, lorem odio
+                        dignissim
+                        nulla, a condimentum sem neque sed ligula. Maecenas id risus eros, eget porttitor metus. Quisque pellentesque neque dignissim nisl pellentesque vitae tempus urna eleifend. Nullam egestas, neque id placerat luctus, nibh velit
+                        pharetra nulla, vel pretium justo massa ut elit. Vivamus nec auctor nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla tortor.</p>
+                </div>
+
+                <div class="tab-content">
+                    <h2>JavaScript</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla tortor, a posuere urna. Praesent urna quam, semper ut ultricies et, mollis ac elit. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla tortor, a posuere urna. Praesent urna quam, semper ut ultricies et, mollis ac elit. Suspendisse tempor, lacus id consectetur sagittis, lorem odio
+                        dignissim
+                        nulla, a condimentum sem neque sed ligula. Maecenas id risus eros, eget porttitor metus. Quisque pellentesque neque dignissim nisl pellentesque vitae tempus urna eleifend. Nullam egestas, neque id placerat luctus, nibh velit
+                        pharetra nulla, vel pretium justo massa ut elit. Vivamus nec auctor nunc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

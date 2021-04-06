@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*                        */
+/*    見た目成型          */
+/*                        */
+
+.container {
+  width: 750px;
+  margin: 100px auto;
+}
+
+.tabs > label {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-right: 3px;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tabs > input {
+  display: none;
+}
+
+.tab-content {
+  position: absolute;
+  width: 750px;
+  padding: 10px 35px 20px;
+  border: 2px solid #5660c4;
+  opacity: 0;
+}
+
+.tab-content > h2,
+.tab-content > p {
+  line-height: 1.5em;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 1s, transform 0.8s;
+}
+
+code {
+  padding: 3px;
+  border-radius: 3px;
+  color: white;
+  background-color: gray;
+}
+
+/*                                        */
+/*   チェックされたラジオボタンによって   */
+/*   表示されるコンテンツを変える         */
+#tab01:checked ~ .tab-container > .tab-content:nth-of-type(1),
+#tab01:checked ~ .tab-container > .tab-content:nth-of-type(1) > h2,
+#tab01:checked ~ .tab-container > .tab-content:nth-of-type(1) > p,
+#tab02:checked ~ .tab-container > .tab-content:nth-of-type(2),
+#tab02:checked ~ .tab-container > .tab-content:nth-of-type(2) > h2,
+#tab02:checked ~ .tab-container > .tab-content:nth-of-type(2) > p,
+#tab03:checked ~ .tab-container > .tab-content:nth-of-type(3),
+#tab03:checked ~ .tab-container > .tab-content:nth-of-type(3) > h2,
+#tab03:checked ~ .tab-container > .tab-content:nth-of-type(3) > p
+ {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/*                                        */
+/*      ホバー&チェックBGC変更            */
+/*                                        */
+
+.tabs > label:hover,
+.tabs > input:checked + label {
+  color: white;
+  background: linear-gradient(to bottom right, #99a9ee, #01038f);
+}
