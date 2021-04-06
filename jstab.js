@@ -5,15 +5,15 @@
   for(let i = 0; i < btns.length; i++){
     btns[i].addEventListener('click', () => {
       btns.forEach((btn) => {
-        btn.classList.remove('appear');
+        btn.classList.remove('active');
       });
-      
-      btns[i].classList.add('appear');
+
+      btns[i].classList.add('active');
 
       contents.forEach((content) => {
-        content.classList.remove('appear');
+        content.classList.remove('active');
       });
-      contents[i].classList.add('appear');
+      contents[i].classList.add('active');
     });
   }
 })();

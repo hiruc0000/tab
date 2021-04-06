@@ -64,14 +64,14 @@ code {
 /*                                             */
 /*   JavaScriptでappearクラスを付与した時のCSS */
 /*                                             */
-.btn.appear {
+.btn.active {
   color: white;
   background: linear-gradient(to bottom right, #99a9ee, #01038f);
 }
 
-.appear,
-.tab-content.appear > h2,
-.tab-content.appear > p {
+.active,
+.tab-content.active > h2,
+.tab-content.active > p {
   opacity: 1;
   transform: translateX(0);
 }
