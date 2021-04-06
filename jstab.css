@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*                        */
+/*    見た目成型          */
+/*                        */
+
+.container {
+  width: 750px;
+  margin: 100px auto;
+}
+
+.tabs > .btn {
+  display: inline-block;
+  padding: 0.9em 1.5em;
+  margin-right: 0.2em;
+  border-radius: 5px 5px 0 0;
+  border: none;
+  font-size: 1em;
+  background-color: transparent;
+  cursor: pointer;
+  /* transition: background 0.5s; */
+}
+
+.tab-content {
+  position: absolute;
+  width: 750px;
+  padding: 10px 35px 20px;
+  border: 2px solid #5660c4;
+  opacity: 0;
+}
+
+.tab-content > h2,
+.tab-content > p {
+  line-height: 1.5em;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 1s, transform 0.8s;
+}
+
+.tab-content > p {
+  letter-spacing: 1px;
+  font-size: 0.9em;
+}
+
+code {
+  padding: 3px;
+  border-radius: 3px;
+  color: white;
+  background-color: gray;
+}
+
+.tabs > .btn:hover {
+  color: white;
+  background: linear-gradient(to bottom right, #99a9ee, #01038f);
+}
+
+/*                                             */
+/*   JavaScriptでappearクラスを付与した時のCSS */
+/*                                             */
+.btn.appear {
+  color: white;
+  background: linear-gradient(to bottom right, #99a9ee, #01038f);
+}
+
+.appear,
+.tab-content.appear > h2,
+.tab-content.appear > p {
+  opacity: 1;
+  transform: translateX(0);
+}
