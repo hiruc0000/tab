@@ -19,14 +19,17 @@
         <div class="tab-container">
             <div class="tab-content active">
                 <h2>Tab 1</h2>
-                <p>HTML/CSSだけでtabUIの実装。タブのラベルとradioボタンを関連付け、radioボタンは<code>display:none</code>で非表示に。<br>
-                    またtabを選択した際表示される領域は<code>position:absolute</code>で全て重ね初期状態では<code>opacity:0</code>にしチェックされたradioボタンに対するコンテンツのみを透明化を解除し表示されるようにする。</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla tortor, a posuere urna. Praesent urna quam, semper ut ultricies et, mollis ac elit. Suspendisse tempor, lacus id consectetur sagittis, lorem odio.</p>
+                <p>JavaScriptによるtab機能の実装。<br>
+                    まずtabを全て取得し、クリックしたtabに<code>active</code>クラスを付与する。<br>
+                    またクリックしたtabと関連している<code>tab-content</code>にも<code>active</code>クラスを付与し表示されるようにする。<br>
+                    <code>active</code>クラスが付与していない場合は非表示に。</p>
+                <p>JavaScriptではボタンに<code>addEventListener</code>でクリックイベントを作りクリックした際に全てのボタンと表示領域から<code>active</code>クラスを除去し、<br>
+                    クリックしたボタンとそれに関連づけている表示領域に<code>active</code>クラスを付与する処理で実装しています。</p>
             </div>
 
             <div class="tab-content">
                 <h2>Tab 2</h2>
-                <p>選択したtabのコンテンツ表示される際のアニメーションは、tab-content内の見出し<code>h2</code>と<code>p</code>を右にずらし透明にし表示される時に元に戻し<code>transition</code>で指定する。</p>
+                <p>選択したtabのコンテンツ表示される際のアニメーションは、tab-content内の見出し<code>h2</code>と<code>p</code>を下にずらし透明にし表示される時に元に戻し<code>transition</code>で指定する。</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla tortor, a posuere urna. Praesent urna quam, semper ut ultricies et, mollis ac elit. Suspendisse tempor, lacus id consectetur sagittis, lorem odio
                     dignissim
                     nulla, a condimentum sem neque sed ligula. Maecenas id risus eros, eget porttitor metus. Quisque pellentesque neque dignissim nisl pellentesque vitae tempus urna eleifend. Nullam egestas, neque id placerat luctus, nibh velit
