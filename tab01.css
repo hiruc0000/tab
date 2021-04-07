@@ -18,8 +18,8 @@ body {
 
 .tabs > label {
   display: inline-block;
-  padding: 12px 20px;
-  margin-right: 3px;
+  padding: 0.6em 2em;
+  margin-right: 0.2em;
   border-radius: 5px 5px 0 0;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -45,6 +45,11 @@ body {
   transition: opacity 1s, transform 0.8s;
 }
 
+.tab-content > p {
+  letter-spacing: 1px;
+  font-size: 0.9em;
+}
+
 code {
   padding: 3px;
   border-radius: 3px;
@@ -67,6 +72,7 @@ code {
  {
   opacity: 1;
   transform: translateX(0);
+  z-index: 100;
 }
 
 /*                                        */
