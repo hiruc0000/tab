@@ -76,4 +76,5 @@ code {
 .tab-content.active > p {
   opacity: 1;
   transform: translateY(0);
+  z-index: 100;
 }
