@@ -4,16 +4,20 @@
 
   for(let i = 0; i < btns.length; i++){
     btns[i].addEventListener('click', () => {
-      btns.forEach((btn) => {
-        btn.classList.remove('active');
-      });
-
+      //全てのボタンからクラス除去後クリックしたボタンにクラス付与
+      removeClass(btns);
       btns[i].classList.add('active');
 
-      contents.forEach((content) => {
-        content.classList.remove('active');
-      });
+      //全てのタブコンテンツからクラス除去
+      //押されたボタンに対応するコンテンツにクラス付与
+      removeClass(contents);
       contents[i].classList.add('active');
     });
   }
 })();
+
+function removeClass(elements) {
+  elements.forEach((element) => {
+    element.classList.remove('active');
+  });
+}
