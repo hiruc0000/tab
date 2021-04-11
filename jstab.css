@@ -23,7 +23,7 @@ body {
   border-radius: 5px 5px 0 0;
   border: none;
   font-size: 1em;
-  background-color: #99a9ee;
+  background-color: #ff7c8b;
   cursor: pointer;
   /* transition: background 0.5s; */
 }
@@ -33,7 +33,7 @@ body {
   width: 750px;
   padding: 10px 35px 20px;
   color: white;
-  background: linear-gradient(to top right, #99a9ee, #01038f);
+  background: linear-gradient(to top right, #ff7c8b, #850110);
   /* border: 2px solid #5660c4; */
   opacity: 0;
 }
@@ -60,7 +60,7 @@ code {
 
 .tabs > .btn:hover {
   color: white;
-  background: linear-gradient(to bottom right, #99a9ee, #01038f);
+  background: linear-gradient(to top right, #ff7c8b, #850110);
 }
 
 /*                                               */
@@ -68,7 +68,7 @@ code {
 /*                                               */
 .btn.active {
   color: white;
-  background: linear-gradient(to bottom right, #99a9ee, #01038f);
+  background: linear-gradient(to top right, #ff7c8b, #850110);
 }
 
 .active,
